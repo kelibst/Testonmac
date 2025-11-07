@@ -1,0 +1,110 @@
+# macOS VM Disk Images (Large files)
+*.img
+*.dmg
+*.qcow2
+*.iso
+
+# macOS Installer Files
+BaseSystem.*
+RecoveryImage.*
+
+# VM State Files
+*.nvram
+*.log
+
+# SSH Keys (Security)
+*.pub
+*_rsa
+*_ed25519
+id_*
+macos_vm
+macos_vm.pub
+
+# QEMU/KVM Runtime
+*.fd
+OVMF_VARS*.fd
+
+# Temporary Files
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+
+# System Files
+.Spotlight-V100
+.Trashes
+._*
+
+# Package Files
+*.pkg
+*.deb
+*.rpm
+
+# Mounted Directories
+shared/*
+!shared/.gitkeep
+macos-files/
+
+# Build Artifacts
+*.o
+*.so
+*.dylib
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-*
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# Logs
+*.log
+logs/
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# macOS Specific
+.AppleDouble
+.LSOverride
+Icon
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+
+# Linux Specific
+.directory
+.Trash-*
+
+# OSX-KVM Downloaded Files (keep structure but not downloaded files)
+OSX-KVM/fetch-macOS-*.py
+!OSX-KVM/fetch-macOS-v2.py
+OSX-KVM/*.img
+OSX-KVM/*.dmg
+OSX-KVM/*.iso
+OSX-KVM/BaseSystem*
+OSX-KVM/mac_hdd_ng.img
+
+# SPICE/Guest Tools (downloaded packages)
+*.spice
+spice-*.pkg
+spice-*.img
+
+# Keep Important Directories
+!OSX-KVM/OpenCore/
+!plan/
